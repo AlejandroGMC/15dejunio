@@ -54,6 +54,9 @@ function Hola4(props)
         </Carousel.Item>
       
     </Carousel>
+      <br />
+      <h4>{props.descrip}</h4>
+
             <br />
             <center><h1>ENVIANOS UN CORREO!!</h1></center>
             <Form>
@@ -84,7 +87,7 @@ function Hola4(props)
 
     <center>{!show && <Button onClick={() => setShow(true)}>CLICK AQUI!!</Button>}</center>
     <br />
-    <center><a href="#top">Volver al inicio</a></center>
+    <center><button><a href="#top">Volver al inicio</a></button></center>
         </div>
     );
 }

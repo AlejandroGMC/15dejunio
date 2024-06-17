@@ -10,6 +10,7 @@ function Hola(props)
             <div className='texto'>
             <h1>{props.subtitulo}</h1>
             </div>
+            <br />
             <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <center><img
@@ -48,8 +49,12 @@ function Hola(props)
         </Carousel.Caption>
         </Carousel.Item>
       
-    </Carousel>          
+    </Carousel>
+    <br />
+    <h4>{props.descrip}</h4>        
+        <br />
         </div>
+        
     );
 }
 export default Hola;

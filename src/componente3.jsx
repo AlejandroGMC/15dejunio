@@ -49,6 +49,9 @@ function Hola3(props)
         </Carousel.Item>
       
     </Carousel>
+    <br />
+    <h4>{props.descrip}</h4>
+    <br />
         </div>
     );
 }
