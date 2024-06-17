@@ -1,13 +1,54 @@
 import './App.css';
+import Carousel from 'react-bootstrap/Carousel';
+
 function Hola(props)
 {
     return(
         <div className="caja1">
-            <div className='texto'>
-            <h1>Inspección de luces y limpia parabrisas.</h1>
-            <h1>Hola soy{props.nombre}</h1>
-            <p> Soy de {props.pais} y estudio en la {props.uni}</p>
+            <div id="seccion1">
             </div>
+            <div className='texto'>
+            <h1>{props.subtitulo}</h1>
+            </div>
+            <Carousel data-bs-theme="dark">
+      <Carousel.Item>
+        <center><img
+          className="d-block "
+          src="shutterstock_450847201.png"
+          alt="First slide"
+          width="600" height="400"
+        /></center>
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+        <center><img
+          className="d-block "
+          src="1.png"
+          alt="First slide"
+          width="600" height="400"
+        /></center>
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+        <center><img
+          className="d-block "
+          src="2.png"
+          alt="First slide"
+          width="600" height="400"
+        /></center>
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+        </Carousel.Item>
+      
+    </Carousel>          
         </div>
     );
 }

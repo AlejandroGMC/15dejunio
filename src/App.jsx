@@ -4,44 +4,33 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <div>
-      </div>
       <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Menu</Navbar.Brand>
+        <Container className='a'>
+          <Navbar.Brand href="menu">Menu</Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="https://reactjs.org">Inspección de luces y limpia parabrisas</Nav.Link>
-            <Nav.Link href="#features">Revisión con equipo de diagnóstico</Nav.Link>
-            <Nav.Link href="#pricing">Aseo e inspección de frenos desmontandos las 4 ruedas</Nav.Link>
-            <Nav.Link href="#cambio">Cambio de filtro de aceite de motor</Nav.Link>
+            <Nav.Link href="#seccion1">Inspección de luces y limpia parabrisas</Nav.Link>
+            <Nav.Link href="#seccion2">Revisión con equipo de diagnóstico</Nav.Link>
+            <Nav.Link href="#seccion3">Aseo e inspección de frenos desmontando las 4 ruedas</Nav.Link>
+            <Nav.Link href="#seccion4">Cambio de filtro del aceite del motor</Nav.Link>
             </Nav>
         </Container>
+        <div id="menu">
+        </div>
       </Navbar>
       <header className="App-header">
-
-
-
+        <br />
         <h1>TALLER DE MANTENIMIENTO DE VEHICULOS</h1>
-        <img src="tallerdemantinimientovehicular.jpg" className="App-logo" alt="logo" />
+        <br />
+        <img src={props.imagen} className="App-logo" alt="logo" />
+        <br />
         <p>
-        Nuestro taller es de última generación dedicado a la reparación y mantenimiento de vehículos. Con un equipo de técnicos altamente capacitados y experimentados, este taller se enorgullece de su habilidad para manejar una amplia gama de problemas automotrices.
-        El taller está equipado con tecnología de punta, incluyendo herramientas de diagnóstico computarizado y equipos de alineación láser. Además, cuenta con una amplia gama de piezas de repuesto originales para garantizar que los vehículos sean reparados con los componentes de la más alta calidad.
+        {props.descripcion}
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-        <p>
-        ¿Qué se hace en cada mantenimiento?
+        ¿QUE SE HACE EN CADA MANTENIMIENTO?
         </p>
       </header>
     </div>
